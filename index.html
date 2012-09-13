@@ -17,8 +17,61 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
-
+        
         <link rel="stylesheet" href="lib/css/zenburn.css">
+        <style type="text/css">
+            .col3 {
+                width: 894px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .col1 {
+                width: 284px;
+                float: left;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            
+            .boxed {
+                background-color: #999999;
+                border-color: #aaaaaa;
+                border-style: solid;
+                border-radius: 5px;
+                border-width: 2px;
+                padding-top: 3px;
+            }
+            
+            .boxed h3 {
+                margin-bottom: 0px;
+            }
+            
+            .boxed h4 {
+                margin-bottom: 0px;
+            }
+            
+            .reveal .controls {
+                bottom: auto;
+                top: 0px;
+            }
+
+            .rowseperator h3 {
+                color: #2222ff;
+                margin-bottom: 0px;
+                margin-top: 10px;
+            }
+
+            .reveal .slides {
+                top: 20px;
+                margin-top: 0px;
+            }
+
+            .reveal section img {
+                margin-top: 0px;
+            }
+        </style>
     </head>
     
     <body>
@@ -28,10 +81,17 @@
             <!-- Used to fade in a background when a specific slide state is reached -->
             <div class="state-background"></div>
             
-            <aside style="display: block; position: fixed; left: 10px; bottom: 0px;"><i><small><a href="http://twitter.com/_JamesWard">@_JamesWard</a></small></i></aside>
+            <aside style="display: block; position: fixed; bottom: 5px; left: 10px;">
+                <a href="http://heroku.com"><img src="assets/heroku-logo-light-88x31.png"></a>
+            </aside>
+            
+            <aside style="display: block; position: fixed; bottom: 10px; right: 10px;">
+                <a href="http://twitter.com/_JamesWard"  style="font-size: 20px;">@_JamesWard</a>
+            </aside>
             
             
             <div class="slides">
+            
                 <section>
                     <h2>Running Java, Play! and Scala Apps on the Cloud</h2>
                     <br/>
@@ -48,25 +108,100 @@
                 <section>
                     
                     <section>
-                        
                         <h2>Why the Cloud?</h2>
+                    </section>
+
+                    <section>
+                        <img src="assets/ijcbedeg.jpg" height="100%">
+                    </section>
+
+                    <section>
+                            
+                        <div class="col3 boxed">
+                            <h3>Your App</h3>
+                        </div>
+
+                        <div class="rowseperator">
+                            <h3>Cloud Machines</h3>
+                        </div>
                         
-                    </section>
+                        <div class="col3">
+                            <div class="col1 boxed">
+                                <h4>Logging</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Indexing</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Messaging</h4>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col1 boxed">
+                                <h4>Deployment</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Scaling</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Security Updates</h4>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col1 boxed">
+                                <h4>Monitoring</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Backups</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Disaster Recovery</h4>
+                            </div>
+                        </div>
 
-                    <section>
-                        <img src="">
-                    </section>
+                        <div class="rowseperator">
+                            <h3>Virtual Machines</h3>
+                        </div>
 
-                    <section>
-                        <!-- Physical Machines -->
-                    </section>
+                        <div class="col3">
+                            <div class="col1 boxed">
+                                <h4>File Servers</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Web Servers</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Load Balancers</h4>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="col1 boxed">
+                                <h4>Routing</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Firewall</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>IP Assignment</h4>
+                            </div>
+                        </div>
+                    
+                        <div class="rowseperator">
+                            <h3>Physical Machines</h3>
+                        </div>
 
-                    <section>
-                        <!-- Virtual Machines -->
-                    </section>
-
-                    <section>
-                        <!-- Cloud Machines -->
+                        <div class="col3">
+                            <div class="col1 boxed">
+                                <h4>Power</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Network</h4>
+                            </div>
+                            <div class="col1 boxed">
+                                <h4>Physical Space</h4>
+                            </div>
+                        </div>
+                        
                     </section>
 
                     <section>
@@ -138,21 +273,29 @@ $ heroku open
                 <section>
                     
                     <section>
-                        
-                        <h2>Heroku Overview</h2>
-                        
+                        <h2>Heroku</h2>
+                        <h3 class="inverted">Cloud Application Platform</h3>
+                        <img src="assets/ruby.png" style="height: 70px; border: 0px;">
+                        <img src="assets/python.png" style="height: 70px; border: 0px; background-color: #cccccc;">
+                        <img src="assets/nodejs.png" style="height: 70px; border: 0px;">
+                        <br/>
+                        <img src="assets/java.png" style="width: 50px; border: 0px; background-color: #eeeeee; padding: 10px;">
+                        <img src="assets/play.png" style="height: 50px; border: 0px; background-color: #eeeeee; padding: 10px;">
+                        <img src="assets/clojure.png" style="height: 50px; border: 0px; background-color: #eeeeee; padding: 10px;">
+                        <img src="assets/scala.png" style="height: 50px; border: 0px; background-color: #eeeeee; padding: 10px;">
+                        <br/>
+                        <br/>
+                        <h3>2,282,962+ Apps Running on Heroku</h3>
                     </section>
 
                     <section>
-
-                        <h2>How it Works</h2>
-
+                        <h2>What is Heroku?</h2>
+                        <img src="assets/heroku_terms.png" width="100%">
                     </section>
 
                     <section>
-
                         <h2>Zero-Error Deployment</h2>
-
+                        <img src="assets/cd_heroku.png" width="100%">
                     </section>
                     
                 </section>
@@ -169,23 +312,44 @@ $ heroku open
                         
                         <h2>BYOC</h2>
                         
+                        <pre><code>&lt;dependency&gt;
+    &lt;groupId&gt;com.github.jsimone&lt;/groupId&gt;
+    &lt;artifactId&gt;webapp-runner&lt;/artifactId&gt;
+    &lt;version&gt;7.0.22&lt;/version&gt;
+    &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</code></pre>
+                        
                     </section>
     
                     <section>
     
                         <h2>Procfile</h2>
+                        
+                        <pre><code>web: java -jar target/web.jar --port $PORT
+backgroundjob: java -jar target/something.jar
+someotherprocess: java -jar target/whatever.jar</code></pre>
     
                     </section>
     
                     <section>
     
                         <h2>Env Vars</h2>
+                        
+                        <ul>
+                            <li>Zero-Intervention Deployment</li>
+                            <li>External Resources Own Their Config</li>
+                        </ul>
     
                     </section>
     
                     <section>
     
                         <h2>Collaborators</h2>
+
+                        <ul>
+                            <li>Can push changes</li>
+                            <li>Could be a Jenkins / Bamboo System</li>
+                        </ul>
     
                     </section>
     
@@ -193,17 +357,32 @@ $ heroku open
     
                         <h2>Logs</h2>
     
+                        <ul>
+                            <li>Available from CLI, Eclipse, API, etc</li>
+                            <li>Write logs to STDOUT</li>
+                        </ul>
                     </section>
     
                     <section>
     
                         <h2>Scaling</h2>
+                        
+                        <ul>
+                            <li>Allocate Dynos to run a process</li>
+                            <li>Auto-Scaling via APIs & third-party tools</li>
+                        </ul>
     
                     </section>
     
                     <section>
     
                         <h2>Add-ons</h2>
+                        
+                        <ul>
+                            <li><a href="http://addons.heroku.com">addons.heroku.com</a></li>
+                            <li>Cloud Services provided by Heroku and Partners</li>
+                            <li>Databases, Indexing, Logging, Messaging, Analytics, Monitoring, Media, Utilities, Payments</li>
+                        </ul>
     
                     </section>
     
@@ -211,6 +390,12 @@ $ heroku open
     
                         <h2>Pricing</h2>
     
+                        <ul>
+                            <li>$0.05 / Dyno Hour</li>
+                            <li>Add-ons Tier Pricing Based on Usage <i>(most have a free tier)</i></li>
+                            <li>750 free Dyno hours / app / month</li>
+                        </ul>
+                        
                     </section>
                 </section>
 
